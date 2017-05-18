@@ -1,0 +1,21 @@
+Technologies used:
+MySQL version 5.0.8
+Apache Tomcat version 7.0.37
+Java version 8
+Struts version 1.3.10
+Hibernate version 5
+Eclipse (version: Neon Milestone 1 (4.6.0M1)):
+
+Installation:
+1 - Through Git CMD, access the workspace folder that will be used by Eclipse.
+2 - Execute the following command:
+git clone https://github.com/caghuve/rdb-to-onto.git
+3 - Open Eclipse tool and create a new Dynamic Web Project named rdb-to-onto.
+4 - Add to the project the Tomcat 7.0.37 configured with Java 8.
+5 - In the MySQL database, create the rdbtoonto database.
+6 - In the database run the file rdb-to-onto\WebContent\db\rdt-to-onto.sql to create the database tables.
+7 - Initialize Tomcat and access the address: http://localhost:8080/rdb-to-onto/RdbToOnto.do
+
+
+Note: The system is configured to access the database with the credentials root/12345. If necessary, change the data in the file 
+rdb\to\onto\src\resources\hibernate.cfg.xml
